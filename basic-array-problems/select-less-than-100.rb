@@ -10,7 +10,13 @@
 # Refactor
 
 def select_less_than_100(ar)
- 
+  below_100 = []
+  ar.each do |int|
+    if int < 100
+      below_100 << int
+    end
+  end
+  below_100
 end
 
 p select_less_than_100([99, 101, 88, 4, 2000, 50])
