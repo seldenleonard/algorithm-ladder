@@ -5,8 +5,8 @@
 # Refactor
 
 def reduce_sum(ar)
-  i = 0
-  sum = 0
+  sum = ar[0]
+  i = 1
   while i < ar.length
     sum += ar[i]
     i += 1
