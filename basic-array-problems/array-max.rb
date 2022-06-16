@@ -9,3 +9,8 @@
 # Debugger
 # Refactor
 
+# STEPS
+# Define a method that accepts an array
+# Define a variable called greatest_value. Set it to the first value of the input array.
+# Iterate through the array and compare each value to the greatest_value, setting greatest_value to whichever value is greater.
+
