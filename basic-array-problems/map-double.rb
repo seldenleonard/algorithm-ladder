@@ -12,5 +12,17 @@
 # STEPS
 # Create a method that accepts an array
 # Iterate through the array, double each value, then insert that new value into a new array
-# Need: empty array and index
+# Need: empty array, index, and variable for the doubled values
 
+def map_double(ar)
+  i = 0
+  doubles = []
+  while i < ar.length
+    double = ar[i] * 2
+    doubles << double
+    i += 1
+  end
+  doubles
+end
+
+p map_double([4, 2, 5, 99, -4])
