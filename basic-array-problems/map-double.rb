@@ -10,3 +10,7 @@
 # Refactor
 
 # STEPS
+# Create a method that accepts an array
+# Iterate through the array, double each value, then insert that new value into a new array
+# Need: empty array and index
+
