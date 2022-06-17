@@ -17,13 +17,24 @@
 # Use an if-statement to determine whether each value IS or IS NOT a "$"
 # If a "$" is present, return true, otherwise return false.
 
+# def money?(str)
+#   i = 0
+#   until str[i] === "$" || i < str.length do
+#     if str[i] === "$"
+#       true
+#     end
+#     i += 1
+#   end
+# end
+
 def money?(str)
   i = 0
-  until str[i] === "$" || i < str.length do
+  for i in str do
     if str[i] === "$"
       true
+    elsif i = str.length - 1
+      false
     end
-    i += 1
   end
 end
 
