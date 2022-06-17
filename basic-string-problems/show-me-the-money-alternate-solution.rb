@@ -17,3 +17,17 @@
 # Use an if-statement to determine whether each value IS or IS NOT a "$"
 # If a "$" is present, return true, otherwise return false.
 
+def money?(str)
+  i = 0
+  until i == str.length - 1 do
+    if str[i] == "$"
+      return true
+    end
+    i += 1
+  end
+  return false
+end
+
+p money?("i hate $ but i love money i know i know im crazy")
+p money?("abcdefghijklmnopqrstuvwxyz")
+p money?("a skfdjf--%^&*( ")
