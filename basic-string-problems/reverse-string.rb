@@ -12,8 +12,7 @@
 # STEPS
 # Define a method that accepts a string
 # Find length of the string
-# Using that length, start at the last value in the string, iterate backwards, and insert each value into a new array
-# Convert new array to string
+# Using that length, start at the last value in the string, iterate backwards, and insert each value into an empty string
 # Output the string
 
 def reverse_string(str)
