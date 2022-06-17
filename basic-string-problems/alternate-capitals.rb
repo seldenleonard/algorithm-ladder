@@ -8,3 +8,8 @@
 # Write the Code
 # Debugger
 # Refactor
+
+# STEPS (Whiteboarding - Easiest Approach)
+# Define a method that accepts a string
+# Create an empty string
+# Iterate through every value in the input string and insert it into the empty string, the only caveat is that at every other value, capitalize the value before entering it into the empty string
