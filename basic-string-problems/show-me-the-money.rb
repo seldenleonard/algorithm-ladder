@@ -29,12 +29,11 @@
 
 def money?(str)
   i = 0
-  for i in str do
-    if str[i] === "$"
+  until str[i] == "$" || i = str.length - 1 do
+    if str[i] == "$"
       true
-    elsif i = str.length - 1
-      false
     end
+    i += 1
   end
 end
 
