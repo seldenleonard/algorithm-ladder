@@ -11,8 +11,13 @@
 
 # STEPS
 # Define a method that accepts a string
-# Convert string to an array
-# Starting at the last value in the array, iterate backwards, and insert each value into a new array
+# Find length of the string
+# Using that length, start at the last value in the string, iterate backwards, and insert each value into a new array
 # Convert new array to string
 # Output the string
 
+def reverse_string(str)
+  
+end
+
+p reverse_string("abcde")
