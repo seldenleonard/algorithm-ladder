@@ -53,6 +53,18 @@
 #   end
 # end
 
+# def money?(str)
+#   i = 0
+#   while i < str.length
+#     if str[i] == "$"
+#       return true
+#     elsif i = str.length - 1
+#       return false
+#     end
+#     i += 1
+#   end
+# end
+
 def money?(str)
   i = 0
   while i < str.length
@@ -61,7 +73,9 @@ def money?(str)
     end
     i += 1
   end
+  return false
 end
 
 p money?("i hate $ but i love money i know i know im crazy")
 p money?("abcdefghijklmnopqrstuvwxyz")
+p money?("a skfdjf--%^&*( ")
