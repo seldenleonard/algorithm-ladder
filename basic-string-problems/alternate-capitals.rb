@@ -18,8 +18,6 @@
 # Define a method that accepts a string
 # Iterate by 2 through the string until the index is greater than or equal to the length of the input string. At each iteration, replace the value with that same value capitalized.
 
-# EDGECASE Consideration -- what happens if i try to capitalize a space?
-
 def alt_caps(str)
   i = 0
   caps = ""
@@ -33,5 +31,3 @@ def alt_caps(str)
   end
   caps
 end
-
-p alt_caps("hello, how are your porcupines today?")
