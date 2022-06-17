@@ -16,7 +16,13 @@
 # Output the string
 
 def reverse_string(str)
-  
+  i = str.length - 1
+  reverse = ""
+  while i >= 0
+    reverse << str[i]
+    i -= 1
+  end
+  reverse
 end
 
 p reverse_string("abcde")
