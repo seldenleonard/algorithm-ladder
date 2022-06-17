@@ -20,6 +20,7 @@ def reverse_string(str)
   reverse = ""
   while i >= 0
     reverse << str[i]
+    # reverse += str[i]  <----> alternate solution, could be used in place of the line of code above
     i -= 1
   end
   reverse
