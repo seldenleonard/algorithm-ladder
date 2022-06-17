@@ -15,6 +15,14 @@
 # Starting at the last value in the array, iterate backwards, and at each value, enter that value into the "rev" array
 # Output "rev"
 
-def reverse
-  
+def reverse(ar)
+  i = ar.length - 1
+  rev = []
+  while i >= 0
+    rev << ar[i]
+    i -= 1
+  end
+  rev
 end
+
+p reverse([1, 2, 3, 4, 5])
