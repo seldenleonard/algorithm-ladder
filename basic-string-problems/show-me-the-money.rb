@@ -27,14 +27,41 @@
 #   end
 # end
 
+# def money?(str)
+#   i = 0
+#   while i < str.length
+#     if str[i] == "$"
+#       i += 1
+#     end
+#   end
+# end
+
+# p money?("i hate $ but i love money i know i know im crazy")
+
+# def nuts(str)
+#   i = 0
+#   until str[i] === "$"
+#     "ya"
+#   end
+# end
+
+# def money?(str)
+#   i = 0
+#   until str[i] == "$" or i = str.length - 1
+#     p "ya"
+#     i += 1
+#   end
+# end
+
 def money?(str)
   i = 0
-  until str[i] == "$" || i = str.length - 1 do
+  while i < str.length
     if str[i] == "$"
-      true
+      return true
     end
     i += 1
   end
 end
 
 p money?("i hate $ but i love money i know i know im crazy")
+p money?("abcdefghijklmnopqrstuvwxyz")
