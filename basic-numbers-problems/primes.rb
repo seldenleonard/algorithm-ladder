@@ -14,11 +14,16 @@
 # In order to refactor, have the iterations stop like halfway, because for example no number is going to be divisible by a number greater than half of itself. like 100 cannot be divisble by 51. Im sure there an even smarter way to do this and save steps ending somewehre before halfway as well
 
 def prime?(int)
-  n = 2
-  while n < int
-    true if int % n == 0
-    n += 1
+  i = 2
+  is_prime = true
+  while i < int
+    if int % i == 0
+      is_prime = false
+    end
+    i += 1
   end
+  is_prime
 end
 
 p prime?(9)
+p prime?(7)
