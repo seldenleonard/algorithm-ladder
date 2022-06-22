@@ -20,12 +20,16 @@
 # Starting at the last value of the string, iterate backwards, inserting each value into the beginning of an empty string. (or start at the input string's first value, and iterate forwards, inserting each value at the end of an empty string.)
 # Compare the newly created string to the input string, and if they are the same, return true. Otherwise return false.
 
+# def palindrome?(str)
+#   if str === str.reverse
+#     true
+#   else
+#     false
+#   end
+# end
+
 def palindrome?(str)
-  if str === str.reverse
-    true
-  else
-    false
-  end
+  str === str.reverse
 end
 
 p palindrome?("racecar")
