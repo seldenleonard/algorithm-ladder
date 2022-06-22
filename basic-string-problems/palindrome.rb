@@ -11,3 +11,8 @@
 # Refactor
 
 # STEPS
+
+
+def palindrome?(str)
+  
+end
