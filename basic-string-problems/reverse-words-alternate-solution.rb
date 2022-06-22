@@ -17,4 +17,4 @@ def reverse_words(str)
   str.split.reverse.join(" ")
 end
 
-reverse_words("popcorn is so cool isn't it yeah i thought so")
+p reverse_words("popcorn is so cool isn't it yeah i thought so")
