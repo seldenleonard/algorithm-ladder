@@ -3,3 +3,11 @@
 #   Output: true
 #   Input: “baloney”
 #   Output: false
+
+# Clarify
+# Visualize
+# Write the Code
+# Debugger
+# Refactor
+
+# STEPS
