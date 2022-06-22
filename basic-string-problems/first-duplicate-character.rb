@@ -3,3 +3,10 @@
   # Input: “abcdefghhijkkloooop”
   # Output: “h”
 
+# Clarify
+# Visualize
+# Write the Code
+# Debugger
+# Refactor
+
+# STEPS
