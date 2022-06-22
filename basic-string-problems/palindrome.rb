@@ -36,18 +36,18 @@
 #   i = str.length - 1
 #   reverse = "" 
 #   while i >= 0
-#     reverse << str[i]
+    # reverse << str[i] # Alternatively, I could use "reverse += str[i]" to achieve same correct result
 #     i -= 1
 #   end
 #   str === reverse
 # end
 
 def palindrome?(str)
-  i = str.length - 1
+  i = 0
   reverse = "" 
-  while i >= 0
-    reverse += str[i]
-    i -= 1
+  while i < str.length
+    reverse = str[i] + reverse
+    i += 1
   end
   str === reverse
 end
