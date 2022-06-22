@@ -21,5 +21,10 @@
 # Compare the newly created string to the input string, and if they are the same, return true. Otherwise return false.
 
 def palindrome?(str)
-  
+  if str === str.reverse
+    true
+  end
 end
+
+p palindrome?("racecar")
+p palindrome?("hello")
