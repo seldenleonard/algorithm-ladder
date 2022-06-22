@@ -22,7 +22,7 @@ def first_duplicate(str)
     end
     i += 1
   end
-  nil
 end
 
+p first_duplicate("abcdefghhijkkloooop")
 p first_duplicate("abcde")
