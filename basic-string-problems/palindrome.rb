@@ -32,11 +32,21 @@
 #   str === str.reverse
 # end
 
+# def palindrome?(str)
+#   i = str.length - 1
+#   reverse = "" 
+#   while i >= 0
+#     reverse << str[i]
+#     i -= 1
+#   end
+#   str === reverse
+# end
+
 def palindrome?(str)
   i = str.length - 1
   reverse = "" 
   while i >= 0
-    reverse << str[i]
+    reverse += str[i]
     i -= 1
   end
   str === reverse
