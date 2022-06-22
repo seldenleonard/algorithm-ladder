@@ -10,8 +10,9 @@
 # Debugger
 # Refactor
 
-# STEPS
-
+# STEPS (using .reverse function)
+# Define a method that accepts a string
+# Compare the input to the input.reverse and if they are the same, return true. Otherwise return false.
 
 def palindrome?(str)
   
