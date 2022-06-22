@@ -28,8 +28,18 @@
 #   end
 # end
 
+# def palindrome?(str)
+#   str === str.reverse
+# end
+
 def palindrome?(str)
-  str === str.reverse
+  i = str.length - 1
+  reverse = "" 
+  while i >= 0
+    reverse << str[i]
+    i -= 1
+  end
+  str === reverse
 end
 
 p palindrome?("racecar")
