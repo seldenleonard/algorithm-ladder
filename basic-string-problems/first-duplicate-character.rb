@@ -12,3 +12,6 @@
 # STEPS
 # 
 
+def first_duplicate(str)
+  
+end
