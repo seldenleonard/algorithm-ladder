@@ -21,20 +21,35 @@
   # If year is divisible by 100, leap equals false
     # Unless if year is divisible by 400, leap equals true
 
+# def leap_year?(year)
+#   leap = false
+#   if year % 4 == 0
+#     leap = true
+#   elsif year % 100 == 0
+#     leap = false
+#     unless
+#       if year % 400 == 0
+#         leap = true
+#       end
+#     end
+#   end
+# end
+
 def leap_year?(year)
   leap = false
   if year % 4 == 0
     leap = true
-  elsif year % 100 == 0
-    leap = false
-    unless
-      if year % 400 == 0
-        leap = true
-      end
-    end
   end
+  if year % 100 == 0
+    leap = false
+  end
+  if year % 400 == 0
+    leap = true
+  end
+  leap
 end
 
 p leap_year?(1920)
 p leap_year?(400)
+p leap_year?(200)
 p leap_year?(6)
