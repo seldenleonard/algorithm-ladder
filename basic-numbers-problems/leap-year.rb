@@ -14,3 +14,9 @@
 # Refactor
 
 # STEPS
+# Define a method that accepts an integer
+# Set a variable called "leap" equal to false
+# Using if/elsif statements:
+  # If year is divisible by 4, leap equals true
+  # If year is divisible by 100, leap equals false
+    # Unless if year is divisible by 400, leap equals true
