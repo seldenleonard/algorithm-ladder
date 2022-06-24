@@ -20,6 +20,8 @@
   # Then increase index by 1
 # Reset index equal to 1
 # Write a second loop identical to the previous one, with the only differences being that instead of doing index * 3, it uses index * 5
+# Reset index equal to 1
+# Write a third loop that deducts all multiples of 3 AND 5 below the value of the input integer from sum (because they will have been added to the sum twice)
 # Return sum
 
 def multiples(int)
@@ -32,6 +34,11 @@ def multiples(int)
   index = 1
   while index * 5 < int
     sum += index * 5
+    index += 1
+  end
+  index = 1
+  while index * 5 * 3 < int
+    sum -= index * 5 * 3
     index += 1
   end
   sum
