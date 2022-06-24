@@ -24,11 +24,11 @@
 # Write a third loop that deducts all multiples of 3 AND 5 below the value of the input integer from sum (because they will have been added to the sum twice)
 # Return sum
 
-def multiples(int)
+def multiples(int, a, b)
   index = 1
   sum = 0
-  while index * 3 < int
-    sum += index * 3
+  while index * a < int
+    sum += index * a
     index += 1
   end
   index = 1
@@ -37,11 +37,11 @@ def multiples(int)
     index += 1
   end
   index = 1
-  while index * 5 * 3 < int
-    sum -= index * 5 * 3
+  while index * a * b < int
+    sum -= index * a * b
     index += 1
   end
   sum
 end
 
-p multiples(1000)
+p multiples(1000, 3, 5)
