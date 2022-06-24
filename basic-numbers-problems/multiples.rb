@@ -24,22 +24,34 @@
 # Write a third loop that deducts all multiples of 3 AND 5 below the value of the input integer from sum (because they will have been added to the sum twice)
 # Return sum
 
+# SOLUTION 1 - SUCCESSFULL
+# def multiples(int, a, b)
+#   index = 1
+#   sum = 0
+#   while index * a < int
+#     sum += index * a
+#     index += 1
+#   end
+#   index = 1
+#   while index * 5 < int
+#     sum += index * 5
+#     index += 1
+#   end
+#   index = 1
+#   while index * a * b < int
+#     sum -= index * a * b
+#     index += 1
+#   end
+#   sum
+# end
+
+# SOLUTION 2 - REFACTORED
 def multiples(int, a, b)
-  index = 1
   sum = 0
-  while index * a < int
-    sum += index * a
-    index += 1
-  end
-  index = 1
-  while index * 5 < int
-    sum += index * 5
-    index += 1
-  end
-  index = 1
-  while index * a * b < int
-    sum -= index * a * b
-    index += 1
+  for x in 1...int do
+    if x % a == 0 || x % b == 0
+      sum += x
+    end
   end
   sum
 end
