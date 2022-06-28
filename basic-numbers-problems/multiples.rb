@@ -8,9 +8,6 @@
 # Debugger
 # Refactor
 
-# NOTE
-# I'm going to make this a method even though it doesn't specify I need to because then I can substitute out any number and have it work for numbers other than 1000 as well
-
 # STEPS
 # Define a method that accepts an integer
 # Create an index variable and set it equal to 1
