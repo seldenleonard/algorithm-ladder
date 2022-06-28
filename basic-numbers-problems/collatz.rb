@@ -33,3 +33,20 @@
   # n = (n * 3) + 1
   # steps += 1
 # Return steps
+
+def collatz(n)
+  steps = 0
+  while n != 1
+    if n % 2 == 0
+      n = n / 2
+      steps += 1
+    end
+    if n % 2 != 0
+      n = (n * 3) + 1
+      steps += 1
+    end
+  end
+  steps
+end
+
+p collatz(12)
