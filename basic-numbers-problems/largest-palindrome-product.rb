@@ -19,6 +19,22 @@
     # if true, compare that number to highest_palindrome, and set highest_palindrome to equal whichever value is larger, and break the loop
 # NEED TO FIND A WAY FOR THESE LOOPS TO BE MORE SELF-CONTAINED, ALL INSIDE OF ONE LARGER LOOP FOR EXAMPLE, THAT TELLS THE INTERIOR LOOPS TO CONTINUE RUNNING OR NOT DEPENDING ON WHETHER I THINK THERE CAN STILL BE A HIGHER PALINDROME POSSIBLE WITH ANY FURTHER ITERATIONS DOWNWARDS
 
+# def palindrome_product(n)
+#   number_a = ""
+#   n.times do
+#     number_a << "9"
+#   end
+#   number_a = number_a.to_i
+#   number_b = number_a
+#   product = number_a * number_b
+#   until product.to_s == product.to_s.reverse
+#     product = number_a * number_b
+#     highest_palindrome = product
+#     number_a -= 1
+#   end
+#   highest_palindrome
+# end
+
 def palindrome_product(n)
   number_a = ""
   n.times do
@@ -27,12 +43,21 @@ def palindrome_product(n)
   number_a = number_a.to_i
   number_b = number_a
   product = number_a * number_b
+  index_a = 0
   until product.to_s == product.to_s.reverse
-    product = number_a * number_b
-    number_a -= 1
+    product = (number_a - index_a) * number_b
     highest_palindrome = product
+    index_a -= 1
   end
-  highest_palindrome
+  # p highest_palindrome
+  # until product < highest_palindrome
+  #   product = number_a * number_b
+  #   if product.to_s == product.to_s.reverse
+  #     highest_palindrome = product
+  #   end
+  #   index_a -= 1
+  # end
+  # highest_palindrome
 end
 
 p palindrome_product(3)
