@@ -30,9 +30,7 @@ def palindrome_product(n)
   until product.to_s == product.to_s.reverse
     product = number_a * number_b
     number_a -= 1
-    if product.to_s == product.to_s.reverse
-      highest_palindrome = product
-    end
+    highest_palindrome = product
   end
   highest_palindrome
 end
