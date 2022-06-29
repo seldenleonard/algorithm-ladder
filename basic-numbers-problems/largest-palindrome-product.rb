@@ -35,28 +35,55 @@
 #   highest_palindrome
 # end
 
+# def palindrome_product(n)
+#   number_a = ""
+#   n.times do
+#     number_a << "9"
+#   end
+#   number_a = number_a.to_i
+#   number_b = number_a
+#   product = number_a * number_b
+#   index_a = 0
+#   until product.to_s == product.to_s.reverse
+#     product = (number_a + index_a) * number_b
+#     highest_palindrome = product
+#     index_a -= 1
+#   end
+#   index_a = -1
+#   index_b = -1
+#   until product < highest_palindrome
+#     product = (number_a + index_a) * (number_b + index_b)
+#     if product.to_s == product.to_s.reverse
+#       highest_palindrome = product
+#     end
+#     index_a -= 1
+#   end
+#   highest_palindrome
+# end
+
 def palindrome_product(n)
+  highest_palindrome = 0
+  minimum = 100
   number_a = ""
   n.times do
     number_a << "9"
   end
   number_a = number_a.to_i
   number_b = number_a
-  product = number_a * number_b
-  index_a = 0
-  until product.to_s == product.to_s.reverse
-    product = (number_a + index_a) * number_b
-    highest_palindrome = product
-    index_a -= 1
+  number_a.downto(minimum) do |a|
+    number_b.downto(minimum) do |b|
+      product = a * b
+
+      if product.to_s == product.to_s.reverse
+        highest_palindrome = product
+      end
+
+      if product <= highest_palindrome
+        minimum = b
+        break
+      end
+    end
   end
-  # p highest_palindrome
-  # until product < highest_palindrome
-  #   product = number_a * number_b
-  #   if product.to_s == product.to_s.reverse
-  #     highest_palindrome = product
-  #   end
-  #   index_a -= 1
-  # end
   highest_palindrome
 end
 
