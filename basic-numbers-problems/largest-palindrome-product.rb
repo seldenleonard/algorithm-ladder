@@ -63,7 +63,11 @@
 
 def palindrome_product(n)
   highest_palindrome = 0
-  minimum = 100
+  minimum = "1"
+  (n - 1).times do
+    minimum << "0"
+  end
+  minimum = minimum.to_i
   number_a = ""
   n.times do
     number_a << "9"
@@ -87,4 +91,8 @@ def palindrome_product(n)
   highest_palindrome
 end
 
+p palindrome_product(1)
+p palindrome_product(2)
 p palindrome_product(3)
+p palindrome_product(4)
+p palindrome_product(5)
