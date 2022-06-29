@@ -18,3 +18,14 @@
   # Take each product and convert it to a string. Reverse that string and see if string == string.reverse
     # if true, compare that number to highest_palindrome, and set highest_palindrome to equal whichever value is larger, and break the loop
 # NEED TO FIND A WAY FOR THESE LOOPS TO BE MORE SELF-CONTAINED, ALL INSIDE OF ONE LARGER LOOP FOR EXAMPLE, THAT TELLS THE INTERIOR LOOPS TO CONTINUE RUNNING OR NOT DEPENDING ON WHETHER I THINK THERE CAN STILL BE A HIGHER PALINDROME POSSIBLE WITH ANY FURTHER ITERATIONS DOWNWARDS
+
+def palindrome_product(n)
+  number_a = ""
+  n.times do
+    number_a << "9"
+  end
+  number_a = number_a.to_i
+  number_b = number_a
+end
+
+p palindrome_product(3)
