@@ -45,7 +45,7 @@ def palindrome_product(n)
   product = number_a * number_b
   index_a = 0
   until product.to_s == product.to_s.reverse
-    product = (number_a - index_a) * number_b
+    product = (number_a + index_a) * number_b
     highest_palindrome = product
     index_a -= 1
   end
@@ -57,7 +57,7 @@ def palindrome_product(n)
   #   end
   #   index_a -= 1
   # end
-  # highest_palindrome
+  highest_palindrome
 end
 
 p palindrome_product(3)
