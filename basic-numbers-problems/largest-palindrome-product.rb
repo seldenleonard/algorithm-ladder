@@ -26,6 +26,15 @@ def palindrome_product(n)
   end
   number_a = number_a.to_i
   number_b = number_a
+  product = number_a * number_b
+  until product.to_s == product.to_s.reverse
+    product = number_a * number_b
+    number_a -= 1
+    if product.to_s == product.to_s.reverse
+      highest_palindrome = product
+    end
+  end
+  highest_palindrome
 end
 
 p palindrome_product(3)
