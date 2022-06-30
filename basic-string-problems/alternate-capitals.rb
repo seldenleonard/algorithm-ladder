@@ -31,3 +31,5 @@ def alt_caps(str)
   end
   caps
 end
+
+p alt_caps("hello, how are your porcupines today?")

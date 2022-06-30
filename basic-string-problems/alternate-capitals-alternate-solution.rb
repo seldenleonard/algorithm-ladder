@@ -39,11 +39,13 @@ def alt_caps(str)
   while i < str.length
     str[i].upcase!
     i += 2
+    if str[i] == " "
+      i -= 1
+    end
   end
   str
 end
 
-# NEED to just figure out how to get an output that is a single string containing all the changes, without needing to iterate through every value to make this new string. ideally, i can figure out how to iterate by 2 and make the neccessary capitalizations instead of iterating by 1, because it will save computer processing steps. This method is functional at making the changes, but I cant figure out how to get these changes to translate to an output containing them all, without needing to iterate through every letter. Need something like this (but this doesnt work):     str[i].gsub(self, self.upcase!)
-
-
 p alt_caps("hello, how are your porcupines today?")
+
+# NEED to just figure out how to get an output that is a single string containing all the changes, without needing to iterate through every value to make this new string. ideally, i can figure out how to iterate by 2 and make the neccessary capitalizations instead of iterating by 1, because it will save computer processing steps. This method is functional at making the changes, but I cant figure out how to get these changes to translate to an output containing them all, without needing to iterate through every letter. Need something like this (but this doesnt work):     str[i].gsub(self, self.upcase!)
