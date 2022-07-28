@@ -12,19 +12,19 @@
   # When the nested loop concludes, reset the second index to zero so it can go through another looping cycle
 # Print the previously empty array that is now filled with values that combine the values from the two arrays we started with
 
-array1 = ["a", "b", "c"]
-array2 = ["d", "e", "f", "g"]
-
-i = 0
-i2 = 0
-combined_array = []
-while i < array1.length
-  while i2 < array2.length
-    combined_array << "#{array1[i]}#{array2[i2]}"
-    i2 += 1
-  end
+def strings_arrays_combined(string1, string2)
+  i = 0
   i2 = 0
-  i += 1
+  combined_array = []
+  while i < string1.length
+    while i2 < string2.length
+      combined_array << "#{string1[i]}#{string2[i2]}"
+      i2 += 1
+    end
+    i2 = 0
+    i += 1
+  end
+  combined_array
 end
 
-p combined_array
+p strings_arrays_combined(["a", "b", "c"], ["d", "e", "f", "g"])
