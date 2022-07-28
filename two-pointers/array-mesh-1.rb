@@ -3,14 +3,14 @@
   # Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
 
 # STEPS
-# Define two arrays of strings
+# Define a method that accepts two arrays of strings
 # Create two indexes
 # Define an empty array
 # Write a loop that iterates through the length of array1
   # Write a nested loop that iterates through the length of array2
     # Push the concatenated combination of array1[i] and {array2[i2] into the empty array
   # When the nested loop concludes, reset the second index to zero so it can go through another looping cycle
-# Print the previously empty array that is now filled with values that combine the values from the two arrays we started with
+# Return the previously empty array that is now filled with values that combine the values from the two arrays we started with
 
 def strings_arrays_combined(string1, string2)
   i = 0
