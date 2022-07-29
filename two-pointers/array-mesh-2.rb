@@ -19,7 +19,9 @@ i2 = 0
 
 while i < letters.length
   while i2 < letters.length
-    letters_combinations << "#{letters[i]}#{letters[i2]}"
+    unless i == i2
+      letters_combinations << "#{letters[i]}#{letters[i2]}"
+    end
     i2 += 1
   end
   i2 = 0
