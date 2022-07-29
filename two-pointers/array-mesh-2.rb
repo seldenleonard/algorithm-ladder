@@ -12,20 +12,21 @@
   # When the nested loop concludes, reset index2 to zero so it can go through another looping cycle within its parent loop
 # Return the previously empty array that is now filled with values that combine the values from the two arrays we started with
 
-letters = ["a", "b", "c", "d"]
-letters_combinations = []
-i = 0
-i2 = 0
-
-while i < letters.length
-  while i2 < letters.length
-    unless i == i2
-      letters_combinations << "#{letters[i]}#{letters[i2]}"
-    end
-    i2 += 1
-  end
+def combine_letters(letters)
+  letters_combinations = []
+  i = 0
   i2 = 0
-  i += 1
+  while i < letters.length
+    while i2 < letters.length
+      unless i == i2
+        letters_combinations << "#{letters[i]}#{letters[i2]}"
+      end
+      i2 += 1
+    end
+    i2 = 0
+    i += 1
+  end
+  letters_combinations
 end
 
-p letters_combinations
+p combine_letters(["a", "b", "c", "d"])
